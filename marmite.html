@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Just for fun - Marmite</title>
+    <style>
+      body {
+        background-color: #fedc00;
+      }
+      h1 {
+        display: block;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+        color: #fefefe;
+        background-color: #c80736;
+        border: 1px solid #020001;
+        border-radius: 10px;
+      }
+      h2 {
+        text-align: center;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 80%;
+        border-radius: 4px;
+        padding: 30px;
+      }
+
+      p {
+        display: block;
+        margin: 0 auto;
+        line-height: 1.8;
+        font-size: 13px;
+
+        padding-top: 20px;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 50px;
+      }
+      .learn-more {
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        font-size: 11px;
+      }
+
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        text-align: center;
+        text-decoration: none;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #fefefe;
+        border-radius: 4px;
+        font-size: 15px;
+        padding: 10px 20px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.7;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lover or a hater?</h1>
+      <h2>I'm a lover!</h2>
+      <hr />
+
+      <img
+        src="https://www.allrecipes.com/thmb/1574hsXk7JbhxQlRkCnKECMTtNY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-808828558-2000-c554b384df804f1488a491b8daa8b09d.jpg"
+        alt="Marmite spread thickly on toast"
+      />
+      <hr />
+      <p>
+        Marmite is a British savoury food spread based on yeast extract,
+        invented by the German scientist Justus von Liebig. It is made from
+        by-products of beer brewing (lees) and is produced by the British
+        company Unilever. Marmite is a vegan source of B vitamins, including
+        supplemental vitamin B12. A traditional method of use is to spread it
+        very thinly on buttered toast.
+        <br />
+        <a
+          href="https://en.wikipedia.org/wiki/Marmite#:~:text=Marmite%20(%2F%CB%88m%C9%91%CB%90rm,by%20the%20British%20company%20Unilever."
+          target="_blank"
+          class="learn-more"
+        >
+          Learn more on Wikipedia</a
+        >
+      </p>
+      <button class="buy-button">Get your Marmite here</button>
+      <br />
+      <p class="footer">
+        This page was built by
+
+        <a href="https://peppy-syrniki-c56df6.netlify.app/" target="_blank">
+          Emily Mason</a
+        >
+      </p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        alert(
+          "Thank you, " +
+            name +
+            "! We'll be in touch by email, to send you your free Marmite!"
+        );
+      }
+
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
